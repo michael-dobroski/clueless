@@ -1,31 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-// Importing the images at the top of the component file
-import MissScarletImage from '/cards/miss_scarlet.png';
-import ProfessorPlumImage from '/cards/professor_plum.png';
-import MrsPeacockImage from '/cards/mrs_peacock.png';
-import MrGreenImage from '/cards/mr_green.png';
-import ColonelMustardImage from '/cards/colonel_mustard.png';
-import MrsWhiteImage from '/cards/mrs_white.png';
-
-import KitchenImage from '/cards/kitchen.png';
-import BallroomImage from '/cards/ballroom.png';
-import ConservatoryImage from '/cards/conservatory.png';
-import DiningRoomImage from '/cards/dining_room.png';
-import BilliardRoomImage from '/cards/billiard_room.png';
-import LibraryImage from '/cards/library.png';
-import LoungeImage from '/cards/lounge.png';
-import HallImage from '/cards/hall.png';
-import StudyImage from '/cards/study.png';
-
-import RevolverImage from '/cards/revolver.png';
-import CandlestickImage from '/cards/candlestick.png';
-import KnifeImage from '/cards/knife.png';
-import LeadPipeImage from '/cards/lead_pipe.png';
-import WrenchImage from '/cards/wrench.png';
-import RopeImage from '/cards/rope.png';
-
 // Type definitions
 type NotesGrid = boolean[][];
 
@@ -192,33 +167,33 @@ export default function Clueless({
 
   // Dictionaries of image files for suspects, rooms, and weapons
   const suspectCards: { [key: string]: string } = {
-    'Miss Scarlet': MissScarletImage.src,
-    'Professor Plum': ProfessorPlumImage.src,
-    'Mrs. Peacock': MrsPeacockImage.src,
-    'Mr. Green': MrGreenImage.src,
-    'Colonel Mustard': ColonelMustardImage.src,
-    'Mrs. White': MrsWhiteImage.src,
+    'Miss Scarlet': '/cards/miss_scarlet.png',
+    'Professor Plum': '/cards/professor_plum.png',
+    'Mrs. Peacock': '/cards/mrs_peacock.png',
+    'Mr. Green': '/cards/mr_green.png',
+    'Colonel Mustard': '/cards/colonel_mustard.png',
+    'Mrs. White': '/cards/mrs_white.png'
   };
 
   const weaponCards: { [key: string]: string } = {
-    'Revolver': RevolverImage.src,
-    'Candlestick': CandlestickImage.src,
-    'Knife': KnifeImage.src,
-    'Lead Pipe': LeadPipeImage.src,
-    'Wrench': WrenchImage.src,
-    'Rope': RopeImage.src,
+    'Revolver': '/cards/revolver.png',
+    'Candlestick': '/cards/candlestick.png',
+    'Knife': '/cards/knife.png',
+    'Lead Pipe': '/cards/lead_pipe.png',
+    'Wrench': '/cards/wrench.png',
+    'Rope': '/cards/rope.png'
   };
 
   const roomCards: { [key: string]: string } = {
-    'Kitchen': KitchenImage.src,
-    'Ballroom': BallroomImage.src,
-    'Conservatory': ConservatoryImage.src,
-    'Dining Room': DiningRoomImage.src,
-    'Billiard Room': BilliardRoomImage.src,
-    'Library': LibraryImage.src,
-    'Lounge': LoungeImage.src,
-    'Hall': HallImage.src,
-    'Study': StudyImage.src,
+    'Kitchen': '/cards/kitchen.png',
+    'Ballroom': '/cards/ballroom.png',
+    'Conservatory': '/cards/conservatory.png',
+    'Dining Room': '/cards/dining_room.png',
+    'Billiard Room': '/cards/billiard_room.png',
+    'Library': '/cards/library.png',
+    'Lounge': '/cards/lounge.png',
+    'Hall': '/cards/hall.png',
+    'Study': '/cards/study.png'
   };
 
   // Room coordinates and names
