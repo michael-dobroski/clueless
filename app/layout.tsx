@@ -9,8 +9,8 @@ import SessionProvider from "./components/SessionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Clue-less Game",
-  description: "SomaCode's Clue-less Game",
+  title: "Clueless",
+  description: "Unravel the Mystery, with a Dash of Simplicity!",
 };
 
 export default async function RootLayout({

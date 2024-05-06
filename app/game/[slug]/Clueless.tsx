@@ -2,29 +2,29 @@
 import { useState, useEffect } from 'react';
 
 // Importing the images at the top of the component file
-import MissScarletImage from './images/miss_scarlet.png';
-import ProfessorPlumImage from './images/professor_plum.png';
-import MrsPeacockImage from './images/mrs_peacock.png';
-import MrGreenImage from './images/mr_green.png';
-import ColonelMustardImage from './images/colonel_mustard.png';
-import MrsWhiteImage from './images/mrs_white.png';
+import MissScarletImage from '/cards/miss_scarlet.png';
+import ProfessorPlumImage from '/cards/professor_plum.png';
+import MrsPeacockImage from '/cards/mrs_peacock.png';
+import MrGreenImage from '/cards/mr_green.png';
+import ColonelMustardImage from '/cards/colonel_mustard.png';
+import MrsWhiteImage from '/cards/mrs_white.png';
 
-import KitchenImage from './images/kitchen.png';
-import BallroomImage from './images/ballroom.png';
-import ConservatoryImage from './images/conservatory.png';
-import DiningRoomImage from './images/dining_room.png';
-import BilliardRoomImage from './images/billiard_room.png';
-import LibraryImage from './images/library.png';
-import LoungeImage from './images/lounge.png';
-import HallImage from './images/hall.png';
-import StudyImage from './images/study.png';
+import KitchenImage from '/cards/kitchen.png';
+import BallroomImage from '/cards/ballroom.png';
+import ConservatoryImage from '/cards/conservatory.png';
+import DiningRoomImage from '/cards/dining_room.png';
+import BilliardRoomImage from '/cards/billiard_room.png';
+import LibraryImage from '/cards/library.png';
+import LoungeImage from '/cards/lounge.png';
+import HallImage from '/cards/hall.png';
+import StudyImage from '/cards/study.png';
 
-import RevolverImage from './images/revolver.png';
-import CandlestickImage from './images/candlestick.png';
-import KnifeImage from './images/knife.png';
-import LeadPipeImage from './images/lead_pipe.png';
-import WrenchImage from './images/wrench.png';
-import RopeImage from './images/rope.png';
+import RevolverImage from '/cards/revolver.png';
+import CandlestickImage from '/cards/candlestick.png';
+import KnifeImage from '/cards/knife.png';
+import LeadPipeImage from '/cards/lead_pipe.png';
+import WrenchImage from '/cards/wrench.png';
+import RopeImage from '/cards/rope.png';
 
 // Type definitions
 type NotesGrid = boolean[][];
@@ -32,7 +32,7 @@ type NotesGrid = boolean[][];
 // Function to get base URL
 const getApiBaseUrl = () => {
   const isProduction = process.env.NODE_ENV === 'production';
-  return isProduction ? 'https://somacode.vercel.app' : 'http://localhost:3000';
+  return isProduction ? 'https://clueless.vercel.app' : 'http://localhost:3000';
 };
 
 // Construct API URL
